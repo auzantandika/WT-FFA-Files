@@ -1,0 +1,15 @@
+#-------------------ADD THAT TO YOUR SERVER.CFG------------------#
+#-----------------WORK WITH STEAM ID OR DISCORD ID---------------#
+
+add_ace 0nixACTastyAdministrator 0nixACTastyadmin allow
+add_ace 0nixACTastyModerator 0nixACTastymod allow
+
+add_principal identifier.discord:12345 0nixACTastyAdministrator
+add_principal identifier.steam:12345 0nixACTastyAdministrator
+add_principal identifier.license:12345 0nixACTastyModerator
+
+
+
+
+
+#-----------------------------FOR OPPEN ADMIN MENU PRESS INSERT (INS)-------------------#

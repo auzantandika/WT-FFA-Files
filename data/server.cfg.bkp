@@ -1,0 +1,122 @@
+# This file is a minimal version of the default config file.
+# This is NOT supposed to be enough for a fully running server.
+# Please read the fivem documentation:
+#   https://docs.fivem.net/docs/server-manual/server-commands/
+#   https://docs.fivem.net/docs/server-manual/setting-up-a-server/
+
+
+
+#DB STRING
+set mysql_connection_string "user=root;database=exm;password=;localAddress=127.0.0.1"
+set es_enableCustomData 1
+
+## You CAN edit the following:
+endpoint_add_tcp "0.0.0.0:30120"
+endpoint_add_udp "0.0.0.0:30120"
+sv_maxclients 48
+set steam_webApiKey "5CCE9AD224E4CDB9262FBC11E821A101"
+sets tags "default, deployer"
+
+## You MAY edit the following:
+sv_licenseKey "9hhvu31vm49n565dcu4lr2n3v5rw5dfu"
+sv_hostname "MR YANA KIMAK built with CFX Default by Tabarra!"
+sets sv_projectName "[CFX Default] MR YANA KIMAK"
+sets sv_projectDesc "Recipe for the base resources required to run a minimal FiveM server."
+sets locale "root-AQ" 
+
+#bypass admin
+
+add_ace group.admin tigoanticheat.bypass allow
+add_ace group.admin tigoanticheat.commands allow
+add_ace group.admin easyadmin allow
+
+add_principal group.admin group.user
+add_ace resource.extendedmode command.add_ace allow
+add_ace resource.extendedmode command.add_principal allow
+add_ace resource.extendedmode command.remove_principal allow
+
+add_ace resource.essentialmode command.sets allow
+add_ace resource.essentialmode command.add_principal allow
+add_ace resource.essentialmode command.add_ace allow
+
+add_ace resource.xt5m command.add_ace allow
+add_ace resource.xt5m command.add_principal allow
+add_ace resource.xt5m command.remove_principal allow
+
+
+## These resources will start by default.
+ensure mapmanager
+ensure chat
+ensure spawnmanager
+ensure sessionmanager
+ensure basic-gamemode
+ensure hardcap
+
+#essential
+ensure mysql-async
+ensure async
+ensure xt5m
+ensure essentialmode
+ensure fxmigrant
+ensure esplugin_mysql
+
+
+#esxinti
+ensure EasyAdmin
+ensure esx_adminplus
+ensure esx_identity
+ensure skinchanger
+ensure esx_skin
+ensure esx_status
+ensure esx_basicneeds
+ensure esx_optionalneeds
+ensure instance
+ensure esx_datastore
+ensure esx_addonaccount
+ensure esx_addoninventory
+ensure cron
+ensure esx_menu_default
+ensure esx_menu_list
+ensure esx_menu_dialog
+ensure esx_service
+ensure esx_license
+ensure esx_billing
+ensure esx_society
+ensure esx_hud
+ensure esx_vehicleshop
+
+#notif
+ensure b1g_notify
+ensure mythic_notify
+ensure mythic_progbar
+ensure progressBars
+ensure pNotify
+ensure r3_notifications
+ensure t0sic_loadingbar
+ensure threatbar
+
+#inventory
+ensure esx_inventoryhud
+ensure esx_inventoryhud_trunk
+
+
+#job
+ensure esx_jobs
+ensure esx_joblisting
+ensure esx_policejob
+ensure esx_ambulancejob
+
+#noESX
+ensure 3dme
+ensure 3ddo
+ensure radial
+
+
+## Add system admins
+add_ace group.admin command allow # allow all commands
+add_ace group.admin command.quit deny # but don't allow quit
+add_principal identifier.fivem:695631 group.admin #yariz
+add_principal identifier.steam:1100001357f3dd3 group.superadmin
+add_principal identifier.steam:1100001362fe7e9 group.superadmin 
+add_principal identifier.steam:11000010f35ae78 group.superadmin
+add_principal identifier.steam:110000117c6f09c group.superadmin

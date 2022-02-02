@@ -1,0 +1,17 @@
+#-------------------ADD THAT TO YOUR SERVER.CFG------------------#
+#-----------------WORK WITH STEAM ID OR DISCORD ID---------------#
+
+add_ace LittleACGBAdministrator LittleACGBadmin allow
+add_ace LittleACGBModerator LittleACGBmod allow
+add_ace LittleACGBPolice LittleACGBpolice allow
+
+add_principal identifier.discord:12345 LittleACGBAdministrator
+add_principal identifier.steam:12345 LittleACGBAdministrator
+add_principal identifier.license:12345 LittleACGBModerator
+add_principal identifier.license:12345 LittleACGBpolice
+
+
+
+
+
+#-----------------------------FOR OPPEN ADMIN MENU PRESS INSERT (INS)-------------------#

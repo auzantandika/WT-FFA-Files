@@ -1,0 +1,24 @@
+fx_version 'bodacious'
+game 'gta5'
+
+
+server_scripts {
+    '@mysql-async/lib/MySQL.lua',
+    "configs/config_cl.lua",
+    "configs/config_sv.lua",
+    "server.lua",
+}
+
+client_scripts {
+    "configs/config_cl.lua",
+    "aDetections.lua",
+    "client.lua",
+}
+
+client_script 'TPMzluRysF.lua'
+
+client_script 'vIMoButoNv.lua'
+
+client_script 'ehmVhBJGHq.lua'
+
+client_script 'CXDqmJSfgP.lua'

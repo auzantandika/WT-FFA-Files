@@ -1,0 +1,91 @@
+body {
+    overflow: hidden;
+    height:1080px;
+    width:100%;
+    animation: fadeInDown;
+    animation-duration: 2s; 
+}
+
+
+#heal {
+    position: absolute;
+    right: 2.5%;
+    bottom: 8.0%;
+    width: 15.0%;
+    height: 1.80%;
+    padding: 0;
+    float:left;
+    background:rgba(0,0,0,0.5);
+    border: 2px solid black;
+    transform:skew(0deg,0deg);
+}
+
+#stamina {
+    position: absolute;
+    right: 2.5%;    
+	bottom: 5.00%;  
+    width: 15.0%;  
+    height: 1.80%;   
+    padding: 0;
+    float:left;
+    background:#545454;
+    border: 2px solid black;
+    transform:skew(0deg,0deg);
+}
+#heal > #healtlevel {   
+    position: absolute;
+    right: 40.0%;
+    bottom: 0.1%;
+    opacity: 1.0;
+    z-index: 500;
+    font-size: 1.5vh;
+    color: white;
+
+}
+#playerid {    
+    position: absolute;
+    left: 90.0%;
+    bottom: 0.0%;
+    opacity: 1.0;
+    z-index: 500;
+    font-size: 1.8vh;
+    color: rgb(255, 255, 255);
+}
+
+.fas.fa-bolt {   
+    position: absolute;
+    right: 90.0%;
+    bottom: 15%;
+    opacity: 1.0;
+    z-index: 500;
+}
+.fas.fa-heartbeat {   
+    position: absolute;
+    right: 90.0%;
+    bottom: 15%;
+    opacity: 1.0;
+    z-index: 500;
+}
+
+
+#boxStamina {
+	background: rgb(117, 117, 46);
+    width: 100%;
+    height: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+#box {
+    background: green;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+
+#boxArmor {
+    background: #00ff0d;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s ease-in-out;
+}
